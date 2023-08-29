@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Nhập điểm của sinh viên
+        let diemVatLy = parseFloat(prompt("Nhập điểm Vật lý:"));
+        let diemHoaHoc = parseFloat(prompt("Nhập điểm Hóa học:"));
+        let diemSinhHoc = parseFloat(prompt("Nhập điểm Sinh học:"));
+
+        // Tính tổng điểm
+        let tongDiem = diemVatLy + diemHoaHoc + diemSinhHoc;
+
+        // Tính trung bình 3 môn
+        let trungBinh = tongDiem / 3;
+
+        // Hiển thị kết quả
+        console.log("Tổng điểm: " + tongDiem);
+        console.log("Trung bình 3 môn: " + trungBinh.toFixed(2));
+
+    </script>
+</body>
+
+</html>
