@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập điểm thi giữa kỳ:"));
+        let b = parseFloat(prompt("Nhập điểm thi cuối kỳ:"));
+        let c = (a + b) / 2;
+        let d;
+        if (c >= 9) {
+            d = "Xuất sắc";
+        } else if (c >= 8) {
+            d = "Giỏi";
+        } else if (c >= 7) {
+            d = "Khá";
+        } else if (c >= 5) {
+            d = "Trung bình";
+        } else {
+            d = "Yếu";
+        }
+        console.log("Học lực của học sinh là: " + d);
+    </script>
+</body>
+
+</html>
