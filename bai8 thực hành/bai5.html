@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+let mangKyTu = prompt("nhập ký tự có dấu - nhé :").split('_');
+for (let i = 0; i < mangKyTu.length; i++) {
+  for (let j = 0; j < mangKyTu[i].length; j++) {
+    if (mangKyTu[i][j] === '-') {
+      mangKyTu[i] = mangKyTu[i].replace('-', '_');
+    }
+  }
+}
+console.log(`${mangKyTu.join('_')}`);
+    </script>
+</body>
+
+</html>

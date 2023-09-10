@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = ['hoa', 'hồng', 7, 9, 10];
+        let b = 0;
+        for (let i = 0; i < a.length; i++) {
+            if (typeof a[i] === 'number' && Number.isInteger(a[i])) {
+                b += 1;
+            }
+        }
+        console.log(`${b}`);
+
+
+    </script>
+</body>
+
+</html>
