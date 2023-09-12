@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let so = prompt("nhập số muốn tính")
+        function tinhDienTichHinhTron(banKinh) {
+            return Math.PI * banKinh * banKinh;
+        }
+        function tinhChuViHinhTron(banKinh) {
+            return 2 * Math.PI * banKinh;
+        }
+        let banKinhHinhTron = so ;
+        let dienTich = tinhDienTichHinhTron(banKinhHinhTron);
+        let chuVi = tinhChuViHinhTron(banKinhHinhTron);
+        console.log(`Diện tích của hình tròn là: ${dienTich}`);
+        console.log(`Chu vi của hình tròn là: ${chuVi}`);
+    </script>
+</body>
+
+</html>

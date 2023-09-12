@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let chuoiNhap = prompt("Nhập chuỗi ký tự: ");
+        function tinhTanSuatKyTu(chuoi) {
+            let tanSuat = {};
+            for (let i = 0; i < chuoi.length; i++) {
+                let kyTu = chuoi[i];
+                if (tanSuat[kyTu]) {
+                    tanSuat[kyTu]++;
+                } else {
+                    tanSuat[kyTu] = 1;
+                }
+            }
+            for (let kyTu in tanSuat) {
+                console.log(`Ký tự '${kyTu}' xuất hiện ${tanSuat[kyTu]} lần`);
+            }
+        }
+        tinhTanSuatKyTu(chuoiNhap);
+
+    </script>
+</body>
+
+</html>

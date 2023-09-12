@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let year = prompt("Nhập năm muốn biết: ");
+        function laNamNhuan(nam) {
+            if ((nam % 4 === 0 && nam % 100 !== 0) || nam % 400 === 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        let Ketqua = laNamNhuan(year);
+        if (Ketqua) {
+            console.log(`năm ${year} là năm nhuận.`);
+        } else {
+            console.log(` năm ${year} không phải là năm nhuận.`);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = prompt("vui lòng nhập số bất kì: ")
+        function laSoNguyenDuong(so) {
+            if (typeof so !== 'Number') {
+                return false;
+            }
+            return so > 0;
+        }
+        let soCanKiemTra = arr;
+        let ketQua = laSoNguyenDuong(soCanKiemTra);
+
+        console.log(`Số ${soCanKiemTra} là số nguyên dương: ${ketQua}`);
+
+    </script>
+</body>
+
+</html>

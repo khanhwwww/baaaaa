@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sonhap =prompt("hãy nhập số cần tính")
+        function tinhGiaiThua(so) {
+            if (so === 0 || so === 1) {
+                return 1;
+            } else {
+                let giaiThua = 1;
+                for (let i = 2; i <= so; i++) {
+                    giaiThua *= i;
+                }
+                return giaiThua;
+            }
+        }
+        let soCanTinhGiaiThua = sonhap;
+        let ketQuaGiaiThua = tinhGiaiThua(soCanTinhGiaiThua);
+        console.log(`Giai thừa của ${soCanTinhGiaiThua} là: ${ketQuaGiaiThua}`);
+
+    </script>
+</body>
+
+</html>
