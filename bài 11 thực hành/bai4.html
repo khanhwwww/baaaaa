@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let chuoiNhap = ("This is an example!");
+function daoNguocChuoi(chuoi) {
+  let thanhPhan = chuoi.split(' ');
+  let ketQua = thanhPhan.map((tp) => {
+    return tp.split('').reverse().join(''); 
+  }).join(' '); 
+  return ketQua;
+}
+let chuoiKetQua = daoNguocChuoi(chuoiNhap);
+console.log(`Chuỗi sau khi đảo ngược các thành phần: ${chuoiKetQua}`);
+    </script>
+</body>
+</html>
