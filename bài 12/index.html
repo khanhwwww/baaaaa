@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Cho người dùng nhập vào 1 chuỗi.
+        // in ra chuỗi có độ dài lớn nhất gồm các phần tử không trùng nhau.
+        // vd:
+        // input  : "bcdbef"  output : "cdbef" "b","bc","bcd",..."bcdbef","c","cd","cdb"...
+        // input  : "aaaca"   output : "ac"
+        // input  : "aaaaa"   output : "a"
+        // input  : "aabbacc" output : "bac"
+        // Nhập chuỗi ký tự từ người dùng
+        let textIn = prompt("Nhập một chuỗi:");
+
+        function loaiBoTrung(chuoi) {
+            let result = '';
+            let textOut = {};
+
+            for (let i = 0; i < chuoi.length; i++) {
+                let kiTu = chuoi[i];
+                if (!textOut[kiTu]) {
+                    result += kiTu;
+                    textOut[kiTu] = true;
+                }
+            }
+
+            return result;
+        }
+
+        let result = loaiBoTrung(textIn);
+        console.log(`${result}`);
+
+    </script>
+</body>
+
+</html>
